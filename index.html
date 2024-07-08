@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        p{
+            background-color: burlywood;
+            color: black;
+            padding : 10px;
+        }
+
+        .container{
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid black; */
+        justify-content:center; 
+        align-items: center; 
+        gap: 100px 10px;
+       }
+        
+       input[type="text"]{
+        padding: 20px;
+        background-color: rgb(29, 27, 27); 
+        color: white;
+      } 
+     
+      button:hover{
+        background-color: yellow;
+        padding: 10px;
+        border: 2px dashed red;
+      }
+
+       .box{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        margin: 10px; 
+       }
+
+       .txt{
+         text-decoration: line-through; 
+        text-transform:uppercase;
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 25px;
+        width: 50%;
+       }
+
+       .cont-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: 1000px 1000px; */
+        border: 1px solid red;
+        /* gap: 10px 200px; */
+        row-gap: 10px;
+        column-gap: 20px;
+       }
+       .grid-items{
+        height: 100px;
+        /* width: 100px; */
+        border: 2px solid black;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>CSS-Practice</h1>
+    <!-- inline csss -->
+    <p style="background-color: yellow; color: red ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, omnis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nihil laborum minus molestiae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi praesentium impedit aliquam delectus.</p>
+
+    <p class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, quidem repellendus. Nam delectus aperiam repellendus consequuntur repellat necessitatibus consectetur minima?</p>
+     
+    <input type="text"/>
+    <br>
+    <br>
+    <input type="password"/>
+    <button>Hover me</button>
+
+    
+     <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+     </div>
+
+    
+      <div class="cont-grid">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+      </div>
+</body>
+</html>
